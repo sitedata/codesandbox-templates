@@ -6,13 +6,17 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "razzle": "^3.0.0",
+    "razzle": "^3.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0"
-  }
+    "react-router-dom": "^5.0.1",
+    "snyk": "^1.430.0"
+  },
+  "snyk": true
 }
